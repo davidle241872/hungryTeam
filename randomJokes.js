@@ -7,17 +7,46 @@
 fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=10')
 
 .then(response => response.json())
-.then(user => {
-    console.log(user);
-    for(let i=0; i < user.results.length; i++) {
+.then(user => { 
+	console.log(user);
+for(let i = 0; i < user.jokes.length; i++) {
+	let jokesContainer = document.createElement('div');
+	jokesContainer.classList.add("card");
 
-		let jokeTag = document.getElementById('p')
+	let categoryTag = document.createElement('p');
+	 let typeTag = document.createElement('p');
+	 let jokeTag = document.createElement('p');
+	 let deliveryTag = document.createElement('p');
 
-		jokeTag.innerText = user.results[i].joke
 
-	}
+	categoryTag.innerText = 'Category: ' + user.jokes[i].category;
+	typeTag.innerText = 'Types: ' + user.jokes[i].type;
+	jokeTag.innerText = 'Jokes: ' + user.jokes[i].setup;
+	deliveryTag.innerText = 'Delivery: ' +  user.jokes[i].delivery;
 
-	detailContainer.appendChild(jokeTag);
-	document.body.appendChild(jokeContainer);
-});
+
+	jokesContainer.appendChild(categoryTag);
+	jokesContainer.appendChild(typeTag);
+	jokesContainer.appendChild(jokeTag);
+	jokesContainer.appendChild(deliveryTag);
+
+	 document.body.appendChild(jokesContainer);
+}
+})
+
+
+// //.then(user => {
+//     console.log(user);
+//     for(let i=0; i < user.results.length; i++) {
+
+// 		let jokeTag = document.getElementById('p')
+
+// 		jokeTag.innerText = user
+
+// 	}
+
+// 	detailContainer.appendChild(jokeTag);
+// 	document.body.appendChild(jokeContainer);
+// 	// console.log(jokeTag);
+// });
 
