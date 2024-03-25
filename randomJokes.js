@@ -3,14 +3,16 @@
 // being able to implement getElementbyId --> inner.Text --> .appendChild("jokeTag")
 // idea of refreshing a new joke using button or possibly doubleClick function
 
-
-fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=10')
+fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=5')
 
 .then(response => response.json())
 .then(user => { 
 	console.log(user);
 for(let i = 0; i < user.jokes.length; i++) {
+	console.log(user);
+
 	let jokesContainer = document.createElement('div');
+
 	jokesContainer.classList.add("card");
 
 	let categoryTag = document.createElement('p');
