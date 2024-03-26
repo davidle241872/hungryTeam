@@ -30,6 +30,6 @@
 
  
 }
-#DaveChappelle:hover{
+#DaveChappelle,#Katwilliams,#RichardPryor,#EddieMurphy:hover{
     cursor:grab;
 }
