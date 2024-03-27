@@ -1,0 +1,127 @@
+    /* top nav bar styling? */
+.navbar{ 
+    background-color: blueviolet;
+}
+.nav-link{
+   background-color: red;
+   font-weight:bolder;
+}
+.container-fluid{
+   background-color: red;
+   margin: 0;
+}
+/* colorpicker color code #ffde59? */
+.navbar-brand{
+  color: yellow; 
+}
+
+/* Centerpiece styling */
+.body{
+  background-image: url(Mainbackground.png);
+  background-size: cover;
+    width: 100%;
+    height: 740px;
+}
+
+.footer{
+    font-size: 50px;
+    background-color: blueviolet;
+    width: 100%;
+    height: 150px;
+}
+.comedians{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 700px;
+   
+}
+.comedians>img{
+    height: 300px;
+    width: 300px;
+}
+#logo{
+    align-self: center;
+    position: absolute;top: 100px;
+    height: 200px;
+    width: 200px;
+}
+
+ /* Pop-up Modal */
+body {font-family: Arial, Helvetica, sans-serif;} 
+
+/* The Modal (background)  */
+ .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 200px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  /* background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);  */
+}
+
+ /* Modal Content  */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+} 
+
+/* Add Animation  */
+ @-webkit-keyframes animatetop {
+  from {top: -300px; opacity:0} 
+  to {top: 0px;; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity:0}
+  to {top: 0px;; opacity:1}
+} 
+
+/* The Close Button  */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color:rgb(141, 7, 49);
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+ 
+
+#DaveChappelle,#Katwilliams,#RichardPryor,#EddieMurphy:hover{
+    cursor:grab;
+}
+.modal-footer {
+  padding: 2px 16px;
+  background-color:rgb(141, 7, 49);
+  color: white;
+  height: 50px;
+}   
