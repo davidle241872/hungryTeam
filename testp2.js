@@ -30,7 +30,7 @@ function dave(){
         duration:2000
         
     });
-    fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=5')
+    fetch('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=2')
 
     .then(response => response.json())
     .then(user => { 
@@ -271,7 +271,6 @@ var btn = document.getElementById("EddieMurphy");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
 
 
 
