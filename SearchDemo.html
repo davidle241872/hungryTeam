@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href="SearchDemo.css">
 </head>
 <body>
-    <input type="text" id="SearchBar">
-    <button id="button" type="submit">Search</button>
-    <div id ="EventList"></div>
     
+    <input type="text" id="SearchBar" class="SearchBar">
+    <button id="button" class="SearchButton" type="submit">Search</button> 
+    <div id ="EventList"></div>
+
+    <style>
+        .imgLogo {
+            display:block;
+            text-align: center;
+            margin-right:auto;
+            margin-left:auto;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <div class="login-box">
+
+      
+      <img src="twitter_logo_small.png" class="imgLogo" height="50" width="37">
+    <div>
+
+    </div>
+      
+      <!--use <body text={"add_color" to change the color text}-->
+      <body text="black"></body>
+
+      
+      <h1>Sign in to X</h>
+      <button><img src="google_image.png">Sign in with Google</button>
+      <button><img src="Apple.png">Sign in with Apple</button>
+      <hr>
+      <!--use span to add a line between "or" to separate -->
+      <span>or</span>
+      <form>
+      <input type="text" placeholder="Phone, email, or username">
+      <button>Next</button>
+      </form>
+      <button>Forgot Password?</button>
+
 </body>
 <script src="SearchDemo.js"></script>
 
