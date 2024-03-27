@@ -1,7 +1,9 @@
+
 // Comedian functions
 
 //Dave Chappelle
 function dave(){
+    Chappelle.play()
     //Animation
     anime({
         targets: '#DaveChappelle',
@@ -58,6 +60,7 @@ function dave(){
     if (event.target == modal) {
         modal.style.display = "none";
     }
+   
 
 }   
 }
@@ -66,6 +69,7 @@ function dave(){
 }
 //Kat Williams
 function kat(){
+    Williams.play()
     //Animation
     anime({
         targets: '#Katwilliams',
@@ -129,6 +133,7 @@ function kat(){
 }
 //Richard Pryor
 function richard(){
+    Pryor.play()
     //Animation
     anime({
         targets: '#RichardPryor',
@@ -201,6 +206,7 @@ function richard(){
 }
 //Eddie Murphy
 function eddie(){
+    Murphy.play()
  //Animation
     anime({
         targets: '#EddieMurphy',
@@ -229,7 +235,7 @@ function eddie(){
         duration:2000
         
       });
-      fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=5')
+      fetch('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=2')
 
         .then(response => response.json())
         .then(user => { 
@@ -272,5 +278,9 @@ var btn = document.getElementById("EddieMurphy");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-
+//Comedian audio ID
+let Chappelle = document.getElementById("Dave");
+let Pryor = document.getElementById("Richard");
+let Williams = document.getElementById("Kat")
+let Murphy = document.getElementById("Eddie")
 
