@@ -284,4 +284,3 @@ let Pryor = document.getElementById("Richard");
 let Williams = document.getElementById("Kat")
 let Murphy = document.getElementById("Eddie")
 
-
