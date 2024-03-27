@@ -41,10 +41,10 @@
 // }
 // });
 
-// submitInput is my button 
+// submitInput is my button
 const submitInput = document.getElementById("button");
 const userInput = document.getElementById("SearchBar");
-const eventDiv = document.getElementById("EventList");
+const eventContainer = document.getElementById("EventList");
 
 const fetchData = () => {
   const inputValue = userInput.value;
@@ -52,7 +52,7 @@ const fetchData = () => {
   const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=comedy&apikey=pjOyZm2wY8wpDMijKrvkbYyzGxigNnZH&city=${inputValue}`;
 
 // I want an empty div, for my next input or else it'll display previous/current information
-  eventDiv.innerHTML = "";
+  eventContainer.innerHTML = "";
 
   fetch(url)
     .then((res) => res.json())
@@ -60,29 +60,30 @@ const fetchData = () => {
       console.log(data);
       // using console.log to view the data within the browser console.log ( You can look through the array)
       if (data._embedded && data._embedded.events) {
-        data._embedded.events.forEach((event) => {
+        data._embedded.events.forEach((events) => {
           const eventItem = document.createElement("div");
 
           const titleElement = document.createElement("p");
+          const urlElement = document.createElement("p");
 
-          titleElement.innerText = event.name;
 
-          // titleElement.innerText = event.url;
+            titleElement.innerText = events.name;
+          
 
-          // titleElement.innerText = event.info;
-          eventItem.appendChild(titleElement);
+           //titleElement.innerText = events.url;
+
+           //titleElement.innerText = events.info;
 
           // to add the empty container
-          eventDiv.appendChild(eventItem);
-
-          const urlElement = document.createElement("p");
-          urlElement.innerText = event.url;
+          eventItem.appendChild(titleElement);
           eventItem.appendChild(urlElement);
+          eventContainer.appendChild(eventItem);
+
         });
       } else {
         const errorMessage = document.createElement("p");
         errorMessage.innerText = "No events in the city currently.";
-        eventDiv.appendChild(errorMessage);
+        eventContainer.appendChild(errorMessage);
       }
     });
 };
