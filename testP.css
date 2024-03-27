@@ -4,7 +4,7 @@
 }
 .nav-link{
    background-color: red;
-   font-weight:bolder;
+   font-size: 20px;
 }
 .container-fluid{
    background-color: red;
@@ -108,11 +108,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .modal-header {
   padding: 2px 16px;
-  background-color:rgb(141, 7, 49);
+  background-color: blueviolet;
   color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  font-size: 25px;
+}
 
  
 
@@ -121,7 +124,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 .modal-footer {
   padding: 2px 16px;
-  background-color:rgb(141, 7, 49);
+  background-color: blueviolet;
   color: white;
   height: 50px;
 }   
+
+/* nav login tab */
+#login{
+  
+}
