@@ -1,3 +1,21 @@
+    /* top nav bar styling? */
+.navbar{ 
+    background-color: blueviolet;
+}
+.nav-link{
+   background-color: red;
+   font-weight:bolder;
+}
+.container-fluid{
+   background-color: red;
+   margin: 0;
+}
+/* colorpicker color code #ffde59? */
+.navbar-brand{
+  color: yellow; 
+}
+
+/* Centerpiece styling */
 .body{
   background-image: url(Mainbackground.png);
   background-size: cover;
@@ -64,13 +82,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Add Animation  */
  @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+  from {top: -300px; opacity:0} 
+  to {top: 0px;; opacity:1}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+  from {top: -300px; opacity:0}
+  to {top: 0px;; opacity:1}
 } 
 
 /* The Close Button  */
