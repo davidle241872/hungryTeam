@@ -10,8 +10,7 @@
     <title>Random Joke Generator</title>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +76,7 @@
     <div class="body">
       <div class="comedians">
         <img src="./pics/Laighoverflowlogo.png" id="logo">
-          <img src="./pics/RichardPryor.png" onclick="richard()" id="RichardPryor">
+          <img src="./pics/RichardPryor.png" onclick="richard()"id="RichardPryor">
           <img  src="./pics/Katwilliamspic.png" onclick="kat()" id="Katwilliams">
           <img src="./pics/DaveChappellepic.png" onclick="dave()" id="DaveChappelle">
           <img src="./pics/EddieMurphy.png" onclick="eddie()"  id="EddieMurphy">
@@ -86,6 +85,20 @@
 
     </div>
   </div>
+  <!-- Audio for comedians -->
+  <audio id="Dave">
+    <source src="./Audio/DaveChappeleaudio.mp3" type="audio/ogg">
+  </audio>
+  <audio id="Richard">
+    <source src="./Audio/Pryor (audio-extractor.net).mp3" type="audio/ogg">
+  </audio>
+  <audio id="Kat">
+    <source src="./Audio/Kat (audio-extractor.net).mp3" type="audio/ogg">
+  </audio>
+</audio>
+<audio id="Eddie">
+  <source src="./Audio/Eddie (audio-extractor.net).mp3" type="audio/ogg">
+</audio>
 
 <!-- Footer -->
     <footer class="footer">
