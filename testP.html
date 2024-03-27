@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="showme.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -79,12 +79,14 @@
     <div class="body">
       <div class="comedians">
         <img src="./pics/Laighoverflowlogo.png" id="logo">
-          <img src="./pics/RichardPryor.png" id="RichardPryor">
-          <img  src="./pics/Katwilliamspic.png" id="Katwilliams">
-          <img src="./pics/DaveChappellepic.png" id="DaveChappelle">
-          <img src="./pics/EddieMurphy.png" id="EddieMurphy">
+          <img src="./pics/RichardPryor.png" onclick="richard()" id="RichardPryor">
+          <img  src="./pics/Katwilliamspic.png" onclick="kat()" id="Katwilliams">
+          <img src="./pics/DaveChappellepic.png" onclick="dave()" id="DaveChappelle">
+          <img src="./pics/EddieMurphy.png" onclick="eddie()"  id="EddieMurphy">
+          
 
     </div>
+  </div>
 
 <!-- Footer -->
     <footer class="footer">
@@ -96,5 +98,6 @@
 
     </footer>
 </body>
+<script src="./node_modules/animejs/lib/anime.js"></script>
 <script src="./testP.js"></script>
 </html>

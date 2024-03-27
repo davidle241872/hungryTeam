@@ -96,6 +96,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .modal-body {padding: 2px 16px;}
 
+ 
+
+#DaveChappelle,#Katwilliams,#RichardPryor,#EddieMurphy:hover{
+    cursor:grab;
+}
 .modal-footer {
   padding: 2px 16px;
   background-color: #5cb85c;
