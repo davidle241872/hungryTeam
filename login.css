@@ -15,7 +15,7 @@ body{
     align-items: center;
     /* background-color:aqua; */
     width: 400px;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
     margin-top: 50px;
     border: solid aqua;
@@ -32,3 +32,25 @@ body{
  
    
 }
+/* logo styling */
+#logo{
+    width: 200px;
+    height: 200px;
+}
+   
+    /* top nav bar styling? */
+    .navbar{ 
+        background-color: blueviolet;
+    }
+    .nav-link{
+       background-color: red;
+       font-size: 20px;
+    }
+    .container-fluid{
+       background-color: red;
+       margin: 0;
+    }
+    /* colorpicker color code #ffde59? */
+    .navbar-brand{
+      color: yellow; 
+    }
