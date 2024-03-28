@@ -5,15 +5,25 @@
     font-size: 18px;
     color: black
 }
- body{
-    background:#2c3642;}
+/* background image */
+body{
+    background-image: url(livecomedy.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+
+    /* background:#2c3642; */
+}
+
 
  .login-box{
     background: #fff;
-    padding: 82px 150px;
+    /* padding: 82px 150px; */
+    padding-bottom: 80px;
+    padding-inline: 90px;
     width: 585px;
     position: absolute;
-    top: 49%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -59,5 +69,23 @@ cursor: pointer;
     width: 250px;
     height: 160px;
 }
+
+
+    /* top nav bar styling? */
+.navbar{
+    background-color: blueviolet;
+}
+.nav-link{
+    background-color: red;
+    font-size: 20px;
+}
+.container-fluid{
+    background-color: red;
+    margin: 0;
+}
+/* colorpicker color code #ffde59? */
+.navbar-brand{
+    color: yellow; 
+} 
 
  
