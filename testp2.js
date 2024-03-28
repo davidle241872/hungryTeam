@@ -263,6 +263,7 @@ function eddie(){
         if (event.target == modal) {
             modal.style.display = "none";
         }
+        
  
 }   
 }
@@ -284,3 +285,57 @@ let Pryor = document.getElementById("Richard");
 let Williams = document.getElementById("Kat")
 let Murphy = document.getElementById("Eddie")
 
+// Announcer audio ID
+let announcer = document.getElementById("announcer")
+
+//Background music ID
+let background = document.getElementById("Backgroundmusic")
+
+
+//Curtains Animation
+function curtains(){
+    announcer.play()
+    background.play()
+    background.volume = 0.3;
+    background.loop = true;
+    
+anime({
+    targets: '#left',
+    translateX: [-700],
+    delay: 500,
+    direction: 'alternate',
+    loop: false,
+    duration:3000,
+    complete: function(anim) {
+
+    document.querySelector("#left").style.display = "none";
+    }
+  });
+
+  anime({
+    targets: '#right',
+    translateX: [700],
+    delay: 500,
+    direction: 'alternate',
+    loop: false,
+    duration:3000,
+    complete: function(anim) {
+
+        document.querySelector("#right").style.display = "none";
+        }
+    //clickmeSign Animation
+  });
+  anime({
+    targets: '#clickMe',
+    translateX: [700],
+    delay: 500,
+    direction: 'alternate',
+    loop: false,
+    duration:3000,
+    complete: function(anim) {
+
+        document.querySelector("#clickMe").style.display = "none";
+        }
+    
+  });
+}
